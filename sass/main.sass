@@ -1,0 +1,441 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+@import "app/libs/font-awesome/scss/font-awesome"
+@import "app/libs/OwlCarousel/dist/assets/owl.carousel.min"
+@import "app/libs/OwlCarousel/dist/assets/owl.theme.default.min"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+section h2
+	font-size: em(48px)
+	font-family: "GilroyExtraBold", sans-serif
+
+h3
+	font-size: em(19px)
+	font-family: "RobotoRegular", sans-serif
+
+.about-us
+	padding: 100px 0px 50px
+	overflow: hidden
+	position: relative
+	background-color: #fff
+	h2
+		text-align: center
+		margin-top: 0
+		margin-bottom: 66px
+	.row
+		justify-content: center
+	&__item
+		padding-right: 34px
+		margin-bottom: 60px
+		h3
+			margin: 28px 0px
+		p
+			line-height: 28px
+	.btn-projects
+		font-size: em(18px)
+		color: #a1a1a1
+		&:after
+			background-color: #a1a1a1
+			width: 1px
+		&:hover
+			text-decoration: none
+	.figure
+		position: absolute
+	.icon-square_white
+		top: 120px
+		left: 40px
+	.icon-triangle_white
+		top: 70px
+		right: 110px
+	.triangle_rotate
+		left: -8px
+		top: 590px
+		transform: rotate(198deg)
+	.icon-arc_white
+		left: 290px
+		bottom: 50px
+	.icon-arc_left_white
+		right: 100px
+		bottom: 110px
+
+.projects
+	overflow: hidden
+	&__gazprom
+		background-color: #bdcbd7
+		padding: 270px 0px
+		position: relative
+		.row
+			justify-content: flex-end
+		&__img img
+			position: absolute
+			left: 0px
+			top: 60px
+			z-index: 1
+		&__text
+			padding-left: 180px
+	&__tinkoff
+		background-color: #f8d000
+		padding: 200px 0px
+		color: #000
+		position: relative
+		&_img
+			position: absolute
+			top: 0
+			right: 0
+			img
+				width: 100%
+				position: relative
+				z-index: 1
+
+	&__adidas
+		padding: 270px 0px
+		position: relative
+		background-color: #fff
+		overflow: hidden
+		&__img
+			position: absolute
+			bottom: 0
+			left: 0
+		.row
+			justify-content: flex-end
+
+.projects_text
+	z-index: 10
+	position: relative
+	h2
+		margin-bottom: 50px
+	ul
+		margin: 0
+		padding: 0
+		font-size: em(24px)
+		list-style-type: none
+		margin-bottom: 60px
+		color: #000
+		li
+			margin: 6px 0px
+			position: relative
+			padding-left: 30px
+			&:before
+				content: ""
+				display: inline-block
+				width: 16px
+				height: 1px
+				background-color: #000
+				position: absolute
+				left: 0px	
+				top: 18px
+.btn-project
+	font-size: em(22px)
+	font-family: "RobotoRegular", sans-serif
+	padding: 18px 42px
+	border: 2px solid #000
+	color: #000
+	display: inline-block
+	&:hover
+		text-decoration: none
+		background-color: #000
+		color: #fff
+		transition: all .3s ease
+	i
+		margin-left: 6px
+
+.all-projects
+	padding: 66px
+	background-color: #303030
+	text-align: center
+	position: relative
+	overflow: hidden
+	.btn-project
+		color: #fff
+		border-color: #fff
+		&:hover
+			background-color: #FFF
+			color: #000
+	span
+		position: absolute
+	.icon-square
+		bottom: 50px
+		right: 4%
+	.icon-triangle_green
+		left: 32%
+		top: -8px
+	.icon-triangle_blue
+		left: 3%
+		top: 78px
+	.icon-arc_red
+		left: 21%
+		bottom: 56px
+	.icon-arc_yellow
+		top: 70px
+		right: 23%
+
+.causes
+	background-color: #f1f2f2
+	text-align: center
+	padding-bottom: 80px
+	&__title
+		position: relative
+		display: inline-block
+		margin-bottom: 190px
+		img
+			position: absolute
+			top: 0
+			left: -104px
+		h2
+			margin: 0
+			padding-top: 135px
+			z-index: 2
+			position: relative
+
+	&__item
+		text-align: left
+		font-size: em(17px)
+		line-height: 32px
+		padding-right: 66px
+		margin-bottom: 40px
+		h3
+			padding-left: 40px
+			position: relative
+			&:before
+				content: ""
+				display: inline-block
+				width: 45px
+				height: 2px
+				background-color: #e74c3c
+				position: absolute
+				left: -15px	
+				top: 50%
+
+.clients
+	padding: 130px 0px 120px
+	background-color: #FFF
+	text-align: center
+	h2
+		margin-bottom: 100px
+	.row
+		align-items: center
+		justify-content: center
+	&__item
+		margin-bottom: 80px
+		img
+			max-width: 100%
+			height: auto
+			opacity: 0
+			transition: all .5s ease
+			transform: translateY(-25px)
+			&.on
+				opacity: 1
+				transform: translateY(0)
+
+.comment
+	padding: 100px 0px
+	text-align: center
+	position: relative
+	p
+		width: 830px
+		margin: auto
+		font-size: em(34px)
+		padding: 0 15px
+	&:before, &:after
+		content: ""
+		display: inline-block
+		width: 46px
+		height: 2px
+		background-color: #e74c3c
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+	&:before
+		top: 0
+	&:after
+		bottom: 0
+
+.recall
+	padding: 170px 0px
+	.row
+		align-items: center
+	&__item
+		overflow: hidden
+	&__video
+		text-align: center
+		color: #fff
+		position: relative
+		img
+			max-width: 100%
+		.video
+			&:before
+				content: ''
+				background-color: #000
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+				position: absolute
+				opacity: .45
+				z-index: 1
+			&_play
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				top: 100px
+				display: flex
+				flex-direction: column
+				font-size: em(34px)
+				z-index: 2
+				i
+					color: #fff
+					opacity: .7
+					font-size: 160px
+	&__text
+		font-size: em(17px)
+		line-height: 32px
+		padding: 0px 166px 0px 60px
+		h4
+			font-size: em(19px)
+	.owl-nav
+		position: absolute
+		top: 50%
+		width: 100%
+		padding: 0px 100px
+		transform: translateY(-50%)
+		.owl-next
+			background-image: url("../img/arrow-slider.png")
+			display: inline-block
+			width: 27px
+			height: 113px
+			float: right
+		.owl-prev
+			background-image: url("../img/arrow-slider.png")
+			display: inline-block
+			width: 27px
+			height: 113px
+			transform: rotate(180deg)
+		.disabled
+			display: none
+
+.footer__content
+	padding: 130px 0px
+	text-align: center
+	background-image: url("../img/footer-bg.jpg")
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	position: relative
+	color: #fff
+	&:before
+		content: ''
+		background-color: #000
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		position: absolute
+		opacity: .60
+	.footer__text
+		font-family: "GilroyExtraBold", sans-serif
+		z-index: 1
+		position: relative
+		font-size: em(48px)
+		p
+			margin-bottom: 90px
+		span
+			display: block
+		.footer_tel
+			font-size: 30px
+			margin-bottom: 70px
+
+	.icon
+		position: absolute
+	> span.arc_red
+		left: 8%
+		top: 19%
+	span
+		&.arc_yellow
+			right: 4%
+			top: 30%
+		&.square_green
+			left: 10%
+			bottom: 11%
+		&.triangle_blue
+			right: 5%
+			bottom: 12%
+		&.triangle_green
+			top: 55%
+			right: 23%
+
+.footer__social
+	padding: 80px 0px
+	background-color: #222
+	text-align: center
+	ul
+		padding: 0
+		margin: 0
+		li
+			display: inline-block
+			background: linear-gradient(to top, #56d683 0%, #3ec2c0 46%, #26aefd 100%)
+			border-radius: 50%
+			width: 74px
+			height: 74px
+			margin: 0px 10px
+	a
+		width: 74px
+		height: 74px
+		background-color: #222
+		color: #fff
+		font-size: 36px
+		border-radius: 50%
+		display: block
+		border: 3px solid rgba(255, 255, 255, 0)
+		-moz-background-clip: border
+		-webkit-background-clip: border
+		background-clip: border-box
+		-moz-background-clip: padding
+		-webkit-background-clip: padding
+		background-clip: padding-box
+		-moz-background-clip: content
+		-webkit-background-clip: content
+		background-clip: content-box
+		position: relative
+		transition: all .3s ease
+		&:hover
+			background-color: transparent
+
+		i
+			position: absolute
+			top: 16px
+			left: 50%
+			transform: translateX(-50%)
+		
+
+			
+
+
+
+
+//ALWAYS END
+@import "media"

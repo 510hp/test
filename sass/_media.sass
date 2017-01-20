@@ -1,0 +1,358 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1600px)
+	header
+		.header__menu
+			margin-bottom: 150px
+		.logo
+			font-size: em(42px)
+		.header-nav__list li
+			margin: 0px 14px
+		.tel
+			font-size: em(20px)
+			padding-right: 25px
+		.header__text h1
+			font-size: em(64px)
+			line-height: 70px
+		.header__text h2
+			padding-right: 0
+			font-size: em(30px)
+			line-height: 36px
+
+	.about-us__item
+		padding-right: 13px
+
+	.projects__gazprom
+		padding: 170px 0px
+		&__img img
+			width: 65%
+		&__text
+			padding-left: 50px
+
+	.projects_text .btn-project
+		padding: 16px 26px
+
+	.projects__tinkoff
+		padding: 130px 0px
+
+	.projects__adidas
+		padding: 170px 0px
+		&__img img
+			width: 80%
+
+	.causes__item
+		padding-right: 10px
+
+	.clients
+		padding: 60px 0px
+
+	.recall__text
+		padding: 0
+
+	.recall .owl-nav
+		padding: 0px 20px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.toggler
+		position: absolute
+		z-index: 10
+		top: -20px
+		right: 0px
+		display: flex
+		align-items: center
+		width: 3em
+		height: 3em
+		line-height: 3em
+		user-select: none
+		> span
+			display: inline-block
+			vertical-align: bottom
+			width: 100%
+			height: .3rem
+			background: #fff
+			border-radius: .2rem
+			position: relative
+			transition: background .3s .5s
+			&:before, &:after
+				width: 100%
+				height: .3rem
+				background: #fff
+				border-radius: .2rem
+				position: absolute
+				left: 0
+				content: ''
+				transform-origin: 50% 50%
+				transition: top .3s .6s, transform .3s
+			&:before
+				top: 1rem
+			&:after
+				top: -1rem
+
+	.toggler--close > span
+		transition: background .3s 0
+		background: transparent
+		&:before, &:after
+			transition: top .3s, transform .3s .5s
+			top: 0
+		&:before
+			transform: rotate3d(0, 0, 1, 45deg)
+		&:after
+			transform: rotate3d(0, 0, 1, -45deg)
+
+	ul.nav--visible
+		display: block !important
+
+	.header-nav__item
+		display: block
+		&:first-child a
+			padding-right: 3em
+		a
+			display: block
+			padding: 0 1em
+			height: 2em
+			line-height: 3
+			font-weight: 700
+			text-decoration: none
+			margin-bottom: 1px
+
+	header .header-nav
+		position: relative
+		&__list
+			position: absolute
+			top: -20px
+			left: 0px
+			display: none
+			z-index: 10
+			width: 100%
+
+	.order_2
+		order: 2
+
+	.order_3
+		order: 3
+
+	header .tel
+		padding-right: 0
+
+	.projects__gazprom
+		padding: 130px 0px
+
+	.projects_text h2
+		font-size: em(36px)
+
+	.projects__tinkoff
+		padding: 70px 0px
+
+	.projects__adidas
+		padding: 130px 0px
+		&__img img
+			width: 70%
+
+	.recall .owl-nav
+		padding: 0px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	header
+		padding-bottom: 0
+		.header__lang a
+			color: #fff
+		.btn__wrap
+			margin-bottom: 50px
+		.header__text h2
+			margin-bottom: 80px
+
+	.about-us
+		padding-top: 50px
+		&__item
+			h3
+				text-align: center
+			span
+				margin: auto
+
+	.projects__gazprom
+		padding: 110px 0px
+		&__text
+			padding-left: 30px
+			h2
+				font-size: em(28px)
+
+	.projects_text .btn-project, .all-projects .btn-project
+		font-size: em(16px)
+		padding: 10px 20px
+
+	.projects__tinkoff
+		padding: 20px 0px 50px
+		&_img
+			right: -60px
+
+	.projects__adidas
+		padding: 80px 0px
+		&__img img
+			width: 52%
+
+	.causes__item
+		padding: 0
+
+	.comment p
+		width: 100%
+
+	.recall
+		padding: 100px 0px
+		.owl-nav
+			top: 40%
+			padding: 0px 30px
+			transform: translateY(-60%)
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+	.toggler
+		left: 15px
+
+	header
+		padding-top: 30px
+		.header-nav__list
+			top: 0
+			left: 30px
+		.tel
+			font-size: em(16px)
+		.header__text h1
+			font-size: em(32px)
+			line-height: 38px
+		.header__text h2
+			font-size: em(20px)
+			line-height: 26px
+
+	.projects_text
+		padding: 0
+		text-align: center
+		ul
+			text-align: left
+			font-weight: bold
+
+	.projects__gazprom__img img
+		width: 75%
+
+	.projects__tinkoff
+		padding: 20px 0px 30px
+
+	.projects__adidas
+		padding: 0px 0px 30px
+		&__img
+			top: 200px
+			img
+				width: 100%
+		.btn-project
+			color: #fff
+			border-color: #fff
+			background-color: rgba( 0, 0, 0, .4)
+
+	.projects__adidas__text h2
+		margin-bottom: 16px
+
+	.recall__video .video_play
+		font-size: em(20px)
+		top: 35%
+		i
+			font-size: 100px
+
+	.recall__text
+		text-align: center
+
+	.recall .owl-nav
+		display: none
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.projects__gazprom
+		padding: 30px 0px
+
+	.projects__tinkoff_img
+		top: 50px
+
+	.projects__adidas__img
+		top: 230px
+
+	.all-projects .btn-project
+		padding: 10px 18px
+
+	.causes
+		padding-bottom: 20px
+		&__title
+			margin-bottom: 60px
+			img
+				left: -15px
+
+	.recall__video .video_play
+		font-size: em(20px)
+		top: 27%
+		i
+			font-size: 80px
+
+	.recall
+		padding-bottom: 30px
+
+	.footer__social ul li
+		margin: 0
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
